@@ -11,21 +11,23 @@
   </head>
   <div class="weather-app">
   <header>
-    <form>
-      <input type="search" placeholder="Enter a city" required />
-      <input type="submit" value="search" />
+    <form class="search-form">
+      <input type="search" placeholder="Enter a city" class="searhform-input" required />
+      <input type="submit" value="search" class="search-submit" />
     </form>
   </header>
   <main>
+	<div class="weather-data">
     <div>
-      <h1>Paris</h1>
-      <p>
+      <h1 clas="city-weather">Paris</h1>
+      <p class="wea">
         Tuesday 13:33, moderate rain
         <br />
         Humidity: 87%, Wind: 7.2km/h
       </p>
     </div>
     <div>🌦️20°C</div>
+	</div>
   </main>
   <body>
     <footer>
