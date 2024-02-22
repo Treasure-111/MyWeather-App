@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="src/styles.css" />
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,36 +14,38 @@
     />
     <title>Weather App</title>
   </head>
-  <div class="weather-app">
-    <header>
-      <form class="search-form">
-        <input
-          type="search"
-          placeholder="Enter a city"
-          class="searhform-input"
-          required
-        />
-        <input type="submit" value="search" class="search-submit" />
-      </form>
-    </header>
-    <main>
-      <div class="weather-data">
-        <div>
-          <h1 class="city-weather">Paris</h1>
-          <p class="weather-details">
-            Tuesday 13:33, moderate rain
-            <br />
-            Humidity:<strong>87%</strong> , Wind:<strong> 7.2km/h</strong>
-          </p>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            class="searhform-input"
+            id="searchform-input"
+            required
+          />
+          <input type="submit" value="search" class="search-submit" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data">
+          <div>
+            <h1 class="city-weather" id="city">Paris</h1>
+            <p class="weather-details">
+              Tuesday 13:33, moderate rain
+              <br />
+              Humidity:<strong>87%</strong> , Wind:<strong> 7.2km/h</strong>
+            </p>
+          </div>
+          <div class="weather-temperature-container">
+            <div class="temperature-emoji">🌦️</div>
+            <div class="weather-temperature" id="temperature">20</div>
+            <div class="temperature-unit">°C</div>
+          </div>
         </div>
-        <div class="weather-temperature-container">
-          <div class="temperature-emoji">🌦️</div>
-          <div class="weather-temperature">20</div>
-          <div class="temperature-unit">°C</div>
-        </div>
-      </div>
-    </main>
-    <body>
+      </main>
+
       <footer>
         This project was coded by
         <a href="https://github.com/Treasure-111" target="-blank"
@@ -50,6 +54,7 @@
         is
         <a href="https://github.com/Treasure-111" target="-blank">on GitHub</a>
       </footer>
-    </body>
-  </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
 </html>
