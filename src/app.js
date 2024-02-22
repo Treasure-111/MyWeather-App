@@ -19,3 +19,5 @@ function submitSearchElement(event) {
 }
 let searchFormElement = document.querySelector("#search-form");
 searchFormEment = addEventListener("submit", submitSearchElement);
+
+citySearch("lagos");
