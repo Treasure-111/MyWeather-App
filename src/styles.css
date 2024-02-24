@@ -62,9 +62,9 @@ city-weather {
   font-weight: bold;
   margin-left: 10px;
 }
-.temperature-emoji{
-  font-size: 45px;
-  margin-top: 23px;
+.weather-icon{
+  width: 85px;
+  line-height: 88px;
 }
 .temperature-unit{
   font-size: 28px;
