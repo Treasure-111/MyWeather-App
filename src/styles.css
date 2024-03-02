@@ -70,6 +70,24 @@ city-weather {
   font-size: 28px;
   margin-top: 16px;
 }
+.weather-forecast{
+  margin-top: 20px;
+  text-align: center;
+}
+.forecast-date{
+  font-size: 16px;
+  color: #3c3c3cbb;
+}
+
+.forecast-icon{
+  display: block;
+  margin: 10px auto;
+  width: 42px;
+}
+.forecast-temperatures{
+  margin-top: 10px;
+}
+
 footer {
   border-top: 1px solid #f8f6f2;
   padding: 30px 0 0 0;
