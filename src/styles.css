@@ -71,21 +71,28 @@ city-weather {
   margin-top: 16px;
 }
 .weather-forecast{
+  display: flex;
+  justify-content: space-around;
   margin-top: 20px;
   text-align: center;
 }
 .forecast-date{
   font-size: 16px;
   color: #3c3c3cbb;
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .forecast-icon{
   display: block;
-  margin: 10px auto;
-  width: 42px;
+  margin: 5px auto;
+  width: 85px;
+  line-height: 88px;
 }
 .forecast-temperatures{
   margin-top: 10px;
+  justify-content: center;
 }
 
 footer {
